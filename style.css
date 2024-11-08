@@ -1,0 +1,150 @@
+/* Basisstijl voor body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #e0f7fa, #b2dfdb);
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Bovenaan stijl */
+.header {
+    text-align: center;
+    margin-top: 20px;
+}
+.header h1 {
+    font-size: 2.5em;
+    color: #388e3c;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.header p {
+    font-size: 1.2em;
+    color: #666666;
+    margin: 5px 0;
+}
+
+/* Tijdweergave */
+.clock {
+    background: rgba(200, 230, 201, 0.4);
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #388e3c;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Afteltimer */
+.countdown {
+    font-size: 1.2em;
+    color: #388e3c;
+    margin-bottom: 30px;
+    text-align: center;
+    background: rgba(165, 214, 167, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gebedstijden stijl */
+.prayer-times {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.prayer-time {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 130px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prayer-time:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.prayer-time h2 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #2e7d32;
+}
+
+.prayer-time .time {
+    font-size: 2em;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+/* Responsief ontwerp voor kleinere schermen */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .clock {
+        font-size: 2em;
+        padding: 10px 20px;
+    }
+
+    .countdown {
+        font-size: 1em;
+    }
+
+    .prayer-time {
+        width: 100px;
+        padding: 15px;
+    }
+
+    .prayer-time h2 {
+        font-size: 1em;
+    }
+
+    .prayer-time .time {
+        font-size: 1.5em;
+    }
+}
+
+/* Extra responsief ontwerp voor zeer kleine schermen */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .clock {
+        font-size: 1.8em;
+        padding: 8px 15px;
+    }
+
+    .countdown {
+        font-size: 0.9em;
+    }
+
+    .prayer-time {
+        width: 90px;
+        padding: 10px;
+    }
+
+    .prayer-time h2 {
+        font-size: 0.9em;
+    }
+
+    .prayer-time .time {
+        font-size: 1.3em;
+    }
+}
+
+
